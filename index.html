@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Intellible</title>
+<meta name="description" content="Intellible goes through your churned accounts and tells you who is worth calling, why they left and what to say when you do.">
+<meta property="og:title" content="Intellible">
+<meta property="og:description" content="Win back lost revenue.">
+<meta property="og:image" content="assets/film/poster.jpg">
+<meta name="theme-color" content="#010001">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23010001'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23ff9d00'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/InterTight-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="mark" href="#top" aria-label="Intellible home">INTELLIBLE</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-field="hero">
+    <div class="mosaic" aria-hidden="true">
+      <div class="tile t1" data-speed="0.18" style="background-image:url(assets/img/img_dunes_a.webp)"></div>
+      <div class="tile t2" data-speed="-0.12" style="background-image:url(assets/img/img_dunes_c.webp)"></div>
+      <div class="tile t3" data-speed="0.3" style="background-image:url(assets/img/img_arc.webp)"></div>
+      <div class="tile t4" data-speed="-0.2" style="background-image:url(assets/img/img_dunes_b.webp)"></div>
+      <div class="tile t5" data-speed="0.4" style="background-image:url(assets/img/img_dunes_a.webp)"></div>
+    </div>
+    <h1 class="hero-title">
+      <span class="ln" data-drift="-0.3">Win back</span>
+      <span class="ln indent" data-drift="0.22">lost revenue.</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-sub" data-speed="-0.08">Intellible goes through your churned accounts and tells you who is worth calling, why they left and what to say when you do.</p>
+      <button class="film-card glass" id="film-open" aria-label="Watch the demo" data-speed="-0.14">
+        <img src="assets/film/poster.jpg" alt="" loading="eager">
+        <span class="play glass" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
+        <span class="film-label">Watch the demo</span>
+      </button>
+    </div>
+    <span class="scroll-hint">Scroll</span>
+  </section>
+
+  <!-- THE LEAK -->
+  <section class="leak" id="leak" data-field="leak">
+    <div class="leak-pin">
+      <p class="statement reveal">Most companies can tell you how many customers left last quarter, but very few can tell you <span class="sol">which of them would come back</span>.</p>
+      <p class="leak-body reveal">The answers are usually already there, spread across the CRM, the billing tool and a support inbox nobody rereads (which is a shame, because that is where the good stuff tends to be).</p>
+      <div class="float f1" data-speed="0.35"><i></i><b>CRM</b><span>Marked closed-lost and left there</span></div>
+      <div class="float f2" data-speed="0.55"><i></i><b>Billing</b><span>Renewals that quietly failed</span></div>
+      <div class="float f3" data-speed="0.25"><i></i><b>Support</b><span>The ticket that said it all</span></div>
+      <div class="float f4" data-speed="0.45"><i></i><b>Product</b><span>Usage that faded week by week</span></div>
+    </div>
+  </section>
+
+  <!-- ONE ACCOUNT, SIX STEPS -->
+  <section class="steps" id="steps" data-field="steps">
+    <h2 class="display-m steps-title">
+      <span class="ln" data-xdrift="-0.08">Follow one account</span>
+      <span class="ln sol" data-xdrift="0.08">through six steps.</span>
+    </h2>
+    <div class="steps-grid">
+      <div class="dossier-col">
+        <div class="dossier" id="dossier" aria-label="Account file">
+          <div class="dossier-top">
+            <span class="eyebrow">Account file</span>
+            <span class="dossier-count"><b id="step-no">00</b> / 06</span>
+          </div>
+          <h3 class="dossier-name">Harbor Logistics FZE</h3>
+          <span class="stamp" id="stamp">In review</span>
+          <dl class="dossier-rows">
+            <div class="drow" data-i="0"><dt>Can we contact them</dt><dd>Yes</dd></div>
+            <div class="drow" data-i="1"><dt>Who they are today</dt><dd>Still trading after a rename</dd></div>
+            <div class="drow" data-i="2"><dt>Why they left</dt><dd>No invoicing API</dd></div>
+            <div class="drow" data-i="3"><dt>What changed</dt><dd>Hiring 3 finance roles and opened a second branch</dd></div>
+            <div class="drow" data-i="4"><dt>Rehearsal</dt><dd>3 objections raised and answered</dd></div>
+            <div class="drow" data-i="5"><dt>Priority</dt><dd class="hot">Hot</dd></div>
+          </dl>
+          <div class="ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <ol class="step-list">
+        <li class="step" data-stamp="Eligible">
+          <span class="num">01</span><h3>Segment</h3>
+          <p>First we sort who can be contacted from who cannot, so a customer you terminated or one still paying you never ends up on the list.</p>
+        </li>
+        <li class="step" data-stamp="Still trading">
+          <span class="num">02</span><h3>Resolve</h3>
+          <p>Companies rename, merge and get acquired, so we check who each one is today before anyone picks up the phone.</p>
+        </li>
+        <li class="step" data-stamp="Reason found">
+          <span class="num">03</span><h3>Understand</h3>
+          <p>We read what they said when they left and check it against how they actually used the product, because the two often tell different stories.</p>
+        </li>
+        <li class="step" data-stamp="Worth a call">
+          <span class="num">04</span><h3>Research</h3>
+          <p>Then we look at what they are doing now, like hiring, raising money or opening a new office, and only put an account forward when there is real and recent proof it is worth a call.</p>
+        </li>
+        <li class="step" data-stamp="Pitch survived">
+          <span class="num">05</span><h3>Rehearse</h3>
+          <p>Before anyone calls, the pitch is tested against the people who will actually decide. This one deserves its own space, so it has it below.</p>
+        </li>
+        <li class="step" data-stamp="Hot">
+          <span class="num">06</span><h3>Prioritise</h3>
+          <p>What comes out is a ranked list of who to call this week, why now and what to open with.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- REHEARSE: the web of agents -->
+  <section class="rehearse" id="rehearse" data-field="rehearse">
+    <div class="rehearse-pin">
+      <div class="rehearse-copy">
+        <span class="eyebrow sol">Only in Intellible</span>
+        <h2 class="display-l">The meeting before the meeting.</h2>
+        <div class="stages">
+          <p class="stage" data-from="0" data-to="0.27">It starts with everything the account has already told you, from exit emails and support tickets to usage logs and the notes from the last call.</p>
+          <p class="stage" data-from="0.27" data-to="0.52">From that, it builds the people who will decide. A CFO who watches the cost, an ops lead who remembers the rollout and the person who used the product every day, each one an AI agent that thinks the way they do.</p>
+          <p class="stage" data-from="0.52" data-to="0.86">Then it hands them your pitch and lets them push back, one objection at a time, until every concern has an answer worth saying out loud.</p>
+          <p class="stage" data-from="0.86" data-to="1.01">So when your rep finally calls, the hard questions have already been asked (and answered). Most tools tell you who to call; this one tells you how the conversation will go.</p>
+        </div>
+        <div class="tally" aria-live="polite"><b id="raised">0</b><span>objections raised</span><b id="answered" class="sol">0</b><span>answered</span></div>
+      </div>
+      <canvas id="web" aria-label="Signals from emails, tickets, usage and call notes come together into three AI agents, a CFO, an ops lead and a daily user, who debate the pitch until each objection is answered"></canvas>
+    </div>
+  </section>
+
+  <!-- WHAT LANDS ON YOUR DESK -->
+  <section class="desk" id="desk" data-field="desk">
+    <div class="desk-copy">
+      <h2 class="display-m">
+        <span class="ln" data-xdrift="-0.06">What lands</span>
+        <span class="ln sol" data-xdrift="0.06">on your desk.</span>
+      </h2>
+      <p class="lead reveal">A ranked list your sales team can use on Monday morning, with the reason each account left, whether that reason still holds, and a line on why now is the right time.</p>
+    </div>
+    <div class="ledger" role="table" aria-label="Sample win-back list">
+      <div class="lrow head" role="row"><span role="columnheader">Rank</span><span role="columnheader">Company</span><span role="columnheader">Why they left</span><span role="columnheader">Why now</span><span role="columnheader">Priority</span></div>
+      <div class="lrow top" role="row" data-slide><span>01</span><span class="co">Harbor Logistics FZE</span><span>No invoicing API</span><span>The API shipped and they are hiring finance roles</span><span class="pri hot">Hot</span></div>
+      <div class="lrow" role="row" data-slide><span>02</span><span class="co">Palm Row Clinics<em>Acquired by a larger group</em></span><span>Onboarding stalled</span><span>New owner with a bigger budget</span><span class="pri hot">Hot</span></div>
+      <div class="lrow" role="row" data-slide><span>03</span><span class="co">Saffron Lane Cafés</span><span>Said price but never used it</span><span>A smaller plan now fits them</span><span class="pri">Warm</span></div>
+      <div class="lrow" role="row" data-slide><span>04</span><span class="co">Qasr Interiors</span><span>Went to a competitor</span><span>That competitor just raised prices</span><span class="pri">Warm</span></div>
+      <p class="ledger-note">Sample rows</p>
+    </div>
+  </section>
+
+  <!-- WHAT IT WILL NOT DO -->
+  <section class="wont" id="wont" data-field="wont">
+    <h2 class="display-m">
+      <span class="ln" data-xdrift="-0.06">What it</span>
+      <span class="ln" data-xdrift="0.06"><span class="sol">will not</span> do.</span>
+    </h2>
+    <ol class="nots">
+      <li class="not"><span class="strike">Pitch someone who still pays you</span><p>Live customers and anyone you have chosen to stop working with are kept off the list from the start.</p></li>
+      <li class="not"><span class="strike">Invent a reason</span><p>If it cannot back a reason with what the account said or did, it says it does not know.</p></li>
+      <li class="not"><span class="strike">Send anything on its own</span><p>Nothing goes out until a person has looked at it and agreed.</p></li>
+    </ol>
+  </section>
+
+  <!-- CLOSE -->
+  <section class="close" id="close" data-field="close">
+    <h2 class="manifesto">
+      <span class="mask"><span>Some of them were</span></span>
+      <span class="mask"><span class="sol">always coming back;</span></span>
+      <span class="mask"><span>someone just</span></span>
+      <span class="mask"><span>has to ask.</span></span>
+    </h2>
+    <div class="cta-row reveal">
+      <button class="text-btn" id="talk-open"><span aria-hidden="true">→</span> Get in touch</button>
+      <button class="text-btn" id="film-open-2"><span aria-hidden="true">▶</span> Watch the demo</button>
+    </div>
+    <div class="mosaic close-mosaic" aria-hidden="true">
+      <div class="tile k1" data-speed="0.12" style="background-image:url(assets/img/img_dunes_c.webp)"></div>
+      <div class="tile k2" data-speed="-0.1" style="background-image:url(assets/img/img_dunes_a.webp)"></div>
+      <div class="tile k3" data-speed="0.22" style="background-image:url(assets/img/img_dunes_b.webp)"></div>
+      <div class="tile k4" data-speed="-0.16" style="background-image:url(assets/img/img_arc.webp)"></div>
+      <div class="tile k5" data-speed="0.3" style="background-image:url(assets/img/img_dunes_c.webp)"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="mark">INTELLIBLE</span>
+  <span class="muted">Win back lost revenue.</span>
+  <span class="muted">© 2026</span>
+</footer>
+
+<div class="film-overlay" id="film-overlay" aria-hidden="true">
+  <div class="film-backdrop" data-close></div>
+  <div class="film-stage glass" id="film-stage" role="dialog" aria-modal="true" aria-label="Intellible demo">
+    <video id="film" src="assets/film/intellible-film.mp4" poster="assets/film/poster.jpg" playsinline controls preload="metadata"></video>
+    <button class="film-close glass" data-close aria-label="Close the demo">✕</button>
+  </div>
+  <span class="film-hint">Press Esc to keep scrolling</span>
+</div>
+
+<div class="talk-overlay" id="talk-overlay" aria-hidden="true">
+  <div class="film-backdrop" data-talk-close></div>
+  <div class="talk-panel glass" role="dialog" aria-modal="true" aria-labelledby="talk-title">
+    <button class="film-close glass" type="button" data-talk-close aria-label="Close">✕</button>
+    <form id="talk-form" novalidate>
+      <p class="eyebrow talk-eyebrow">Get in touch</p>
+      <h3 class="talk-title" id="talk-title">Let's talk about your lost revenue.</h3>
+      <input type="hidden" name="access_key" value="2184c152-058a-43da-b74d-049748d2c407">
+      <input type="hidden" name="subject" value="New interest in Intellible">
+      <input type="hidden" name="from_name" value="Intellible website">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="talk-label" for="talk-email">Your work email</label>
+      <input class="talk-input" id="talk-email" type="email" name="email" required autocomplete="email" placeholder="you@company.com">
+      <label class="talk-label" for="talk-msg">Anything to add <span class="opt">Optional</span></label>
+      <textarea class="talk-input talk-msg" id="talk-msg" name="message" rows="3" maxlength="1500" placeholder="Tell us a bit about your company, or just say hi!"></textarea>
+      <p class="talk-err" id="talk-err" role="alert"></p>
+      <button class="talk-send" type="submit" id="talk-send">Send</button>
+    </form>
+    <div class="talk-done" id="talk-done" hidden>
+      <p class="eyebrow talk-eyebrow">Sent</p>
+      <h3 class="talk-title">Thanks, I'll be in touch.</h3>
+    </div>
+  </div>
+</div>
+
+<script src="assets/lenis.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
