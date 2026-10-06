@@ -164,6 +164,12 @@ main,.foot{position:relative;z-index:1}
 .cta-row{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;align-items:center;position:relative;z-index:2}
 .cta-soon{font:500 14px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--mint);padding-bottom:4px;border-bottom:1px solid var(--moss-60)}
 .text-btn{background:none;border:0;padding:0 0 4px;border-bottom:1px solid var(--sol);font:600 14px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.cta-main{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;background:var(--sol);color:var(--void);font:600 14px var(--display);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:background .25s,transform .25s}
+.cta-main:hover{background:var(--sand);transform:translateY(-2px)}
+.founder{display:inline-flex;align-items:baseline;gap:12px;margin-top:-6px;font:500 14px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--mint);text-decoration:none;border-bottom:1px solid var(--moss-60);padding-bottom:4px;transition:color .25s,border-color .25s}
+.founder .eyebrow{color:var(--moss-40);font-size:12px}
+.founder:hover{color:var(--sand);border-color:var(--sol)}
+@media (max-width:560px){.founder{white-space:nowrap;font-size:12px;letter-spacing:.08em;gap:8px}.founder .eyebrow{font-size:11px}}
 .text-btn span{color:var(--sol);margin-right:6px;font-size:1.15em}
 
 .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:28px var(--gutter) calc(28px + env(safe-area-inset-bottom,0px));font-size:14px;background:var(--void)}
