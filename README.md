@@ -2,17 +2,12 @@
 
 A single static page. No build step.
 
-- `index.html` is the page.
-- `assets/` holds the styles, the script, the fonts, the images and the film.
+All files sit at the top level of this repo: index.html is the page, plus styles.css, main.js, lenis.min.js, the fonts, the images and the film.
 
-## Put it live on Vercel
+## Hosting
 
-1. Create a new GitHub repo and upload everything in this folder.
-2. In Vercel choose Add New, then Project, and import that repo.
-3. Leave every setting as it is (Framework preset: Other) and press Deploy.
+Connected to Vercel. In Vercel: Add New, then Project, import this repo, leave every setting as it is (Framework preset: Other) and press Deploy. Every push to main updates the live site.
 
-Every push to the repo updates the site.
+## Get in touch form
 
-## Before sending it out
-
-Search `index.html` for `Contact details coming soon` and replace it with your email or booking link once you have it.
+The Get in touch button sends submissions through Web3Forms to vikrant@intellible.io. The access key lives in index.html (field access_key).

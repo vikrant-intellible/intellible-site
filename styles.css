@@ -1,6 +1,6 @@
 /* Intellible. Tokens from the Intellible design kit. Single dark look by design. */
-@font-face{font-family:"Archivo";src:url("fonts/Archivo-Variable.woff2") format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-@font-face{font-family:"Inter Tight";src:url("fonts/InterTight-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Archivo";src:url("Archivo-Variable.woff2") format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:"Inter Tight";src:url("InterTight-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 
 :root{
   --void:#010001; --jet:#161210; --moss-80:#312c21; --moss-60:#5e594a; --moss-40:#959180;
