@@ -1,5 +1,5 @@
 /* Intellible site motion: smooth scroll, one dot field behind the page, parallax layers,
-   the account file, the web of agents and the glass film player. */
+   the account file, the web of agents, the glass menu and the contact panel. */
 (function () {
   "use strict";
   const root = document.documentElement;
@@ -67,6 +67,8 @@
     rehearse: { d: 0.12, h: 0.0, x: 0.6, y: 0.5, w: 0.3 },
     desk: { d: 0.3, h: 0.4, x: 0.85, y: 0.35, w: 0.25, travel: -0.4 },
     wont: { d: 0.3, h: 0.3, x: 0.15, y: 0.6, w: 0.25, travel: 0.3 },
+    who: { d: 0.22, h: 0.15, x: 0.95, y: 0.2, w: 0.15 },
+    faq: { d: 0.2, h: 0.35, x: 0.15, y: 0.5, w: 0.3 },
     close: { d: 0.1, h: 0.2, x: 0.5, y: 0.7, w: 0.9 },
   };
   const sections = $$("[data-field]");
@@ -336,44 +338,23 @@
   }
   requestAnimationFrame(frame);
 
-  // ---------------------------------------------------------- glass film player
-  const overlay = document.getElementById("film-overlay");
-  const stage = document.getElementById("film-stage");
-  const video = document.getElementById("film");
-  const card = document.getElementById("film-open");
-  let opener = null;
-  function flip(from) {
-    const src = from.getBoundingClientRect(), dst = stage.getBoundingClientRect();
-    const dx = src.left + src.width / 2 - (dst.left + dst.width / 2);
-    const dy = src.top + src.height / 2 - (dst.top + dst.height / 2);
-    return `translate(${dx}px,${dy}px) scale(${src.width / dst.width},${src.height / dst.height})`;
+  // ---------------------------------------------------------- glass menu
+  const menu = document.getElementById("menu"), menuBtn = document.getElementById("menu-btn"), veil = document.getElementById("menu-veil");
+  const menuOpen = () => document.body.classList.contains("menu-open");
+  function setMenu(open) {
+    document.body.classList.toggle("menu-open", open);
+    menuBtn.setAttribute("aria-expanded", open); menu.setAttribute("aria-hidden", !open);
+    if (lenis) open ? lenis.stop() : lenis.start();
+    if (open) setTimeout(() => { const f = menu.querySelector("a,button"); if (f) f.focus({ preventScroll: true }); }, 250);
   }
-  function openFilm(from) {
-    opener = from;
-    overlay.classList.add("open"); overlay.setAttribute("aria-hidden", "false");
-    stage.style.transition = "none";
-    stage.style.transform = from === card ? flip(from) : "scale(.92)";
-    void stage.offsetWidth;
-    stage.style.transition = ""; stage.style.transform = "none";
-    if (lenis) lenis.stop();
-    video.currentTime = 0;
-    const pl = video.play(); if (pl && pl.catch) pl.catch(() => {});
-    setTimeout(() => stage.querySelector(".film-close").focus({ preventScroll: true }), 300);
-  }
-  function closeFilm() {
-    if (!overlay.classList.contains("open")) return;
-    video.pause();
-    stage.style.transform = opener === card ? flip(card) : "scale(.92)";
-    overlay.classList.remove("open"); overlay.setAttribute("aria-hidden", "true");
-    if (lenis) lenis.start();
-    setTimeout(() => { stage.style.transform = ""; }, 700);
-    if (opener) opener.focus({ preventScroll: true });
-  }
-  card.addEventListener("click", () => openFilm(card));
-  const second = document.getElementById("film-open-2");
-  if (second) second.addEventListener("click", () => openFilm(second));
-  overlay.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", closeFilm));
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeFilm(); });
+  menuBtn.addEventListener("click", () => setMenu(!menuOpen()));
+  veil.addEventListener("click", () => setMenu(false));
+  menu.querySelectorAll("[data-menu-link]").forEach((el) => el.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menuOpen()) { setMenu(false); menuBtn.focus(); } });
+
+  // one faq answer open at a time
+  const qas = $$(".qa");
+  qas.forEach((d) => d.addEventListener("toggle", () => { if (d.open) qas.forEach((o) => { if (o !== d) o.open = false; }); }));
 
   // ---------------------------------------------------------- get in touch
   const talk = document.getElementById("talk-overlay");
@@ -426,6 +407,7 @@
   document.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", (e) => {
     const id = a.getAttribute("href");
     e.preventDefault();
-    if (lenis) lenis.scrollTo(id === "#top" ? 0 : id); else window.scrollTo({ top: 0, behavior: "smooth" });
+    const tgt = id === "#top" ? null : document.querySelector(id);
+    if (lenis) lenis.scrollTo(tgt || 0, { offset: tgt ? -80 : 0 }); else if (tgt) tgt.scrollIntoView({ behavior: "smooth" }); else window.scrollTo({ top: 0, behavior: "smooth" });
   }));
 })();

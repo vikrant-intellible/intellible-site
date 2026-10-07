@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Intellible</title>
-<meta name="description" content="Intellible goes through your churned accounts and tells you who is worth calling, why they left and what to say when you do.">
+<meta name="description" content="Intellible tells you which lost customers are worth calling, why they left and what to say when you do.">
 <meta property="og:title" content="Intellible">
 <meta property="og:description" content="Win back lost revenue.">
-<meta property="og:image" content="poster.jpg">
+<meta property="og:image" content="img_dunes_a.webp">
 <meta name="theme-color" content="#010001">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23010001'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23ff9d00'/%3E%3C/svg%3E">
 <link rel="preload" href="Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,8 +19,33 @@
 <canvas id="field" aria-hidden="true"></canvas>
 
 <header class="nav">
-  <a class="mark" href="#top" aria-label="Intellible home">INTELLIBLE</a>
+  <div class="navbar">
+    <a class="mark" href="#top" aria-label="Intellible home">INTELLIBLE</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-word">Menu</span>
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+    </button>
+  </div>
+  <div class="menu glass" id="menu" aria-hidden="true">
+    <nav class="menu-col menu-links" aria-label="Sections">
+      <a href="#steps" data-menu-link>How it works</a>
+      <a href="#rehearse" data-menu-link>Rehearse</a>
+      <a href="#who" data-menu-link>Who it's for</a>
+      <a href="#faq" data-menu-link>FAQs</a>
+    </nav>
+    <div class="menu-col menu-main">
+      <span class="eyebrow sol">Pilots open</span>
+      <a class="menu-cta" href="https://calendly.com/vikrant-intellible/30min" target="_blank" rel="noopener"><span aria-hidden="true">→</span> Book a strategy call</a>
+    </div>
+    <div class="menu-col menu-contact">
+      <span class="eyebrow">Contact</span>
+      <button type="button" class="menu-touch" data-talk-open data-menu-link>Get in touch</button>
+      <span class="menu-mail">vikrant@intellible.io</span>
+      <a href="https://www.linkedin.com/in/vikrantsharma10/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
 </header>
+<div class="menu-veil" id="menu-veil" aria-hidden="true"></div>
 
 <main id="top">
 
@@ -38,12 +63,7 @@
       <span class="ln indent" data-drift="0.22">lost revenue.</span>
     </h1>
     <div class="hero-foot">
-      <p class="hero-sub" data-speed="-0.08">Intellible goes through your churned accounts and tells you who is worth calling, why they left and what to say when you do.</p>
-      <button class="film-card glass" id="film-open" aria-label="Watch the demo" data-speed="-0.14">
-        <img src="poster.jpg" alt="" loading="eager">
-        <span class="play glass" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
-        <span class="film-label">Watch the demo</span>
-      </button>
+      <p class="hero-sub" data-speed="-0.08">The customers you lost already know you, which makes them cheaper to win back than strangers; most companies just never ask twice.</p>
     </div>
     <span class="scroll-hint">Scroll</span>
   </section>
@@ -115,6 +135,26 @@
     </div>
   </section>
 
+  <!-- WHO IT'S FOR -->
+  <section class="who" id="who" data-field="who">
+    <h2 class="display-m">
+      <span class="ln" data-xdrift="-0.06">Who it's</span>
+      <span class="ln sol" data-xdrift="0.06">for.</span>
+    </h2>
+    <div class="who-grid">
+      <div class="who-col reveal">
+        <span class="eyebrow sol">For</span>
+        <h3>Teams sitting on a pile of goodbyes</h3>
+        <p>Revenue, customer success and growth teams at B2B companies with recurring revenue, enough lost accounts that guessing has become expensive, and a list nobody has opened since the last cancellation email.</p>
+      </div>
+      <div class="who-col reveal">
+        <span class="eyebrow">Not for</span>
+        <h3>Anyone who already knows every name</h3>
+        <p>If you have lost twelve customers and remember exactly why each one walked, call them this afternoon (you don't need us for that). It's also not for anyone hoping to send the same win-back email to everyone.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- REHEARSE: the web of agents -->
   <section class="rehearse" id="rehearse" data-field="rehearse">
     <div class="rehearse-pin">
@@ -165,6 +205,22 @@
     </ol>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq" id="faq" data-field="faq">
+    <div class="faq-head">
+      <span class="eyebrow sol">Questions</span>
+      <h2 class="display-m">Before you<br><span class="sol">book a call.</span></h2>
+    </div>
+    <div class="faq-panel glass reveal">
+      <details class="qa" open><summary>Who is Intellible for?</summary><p>B2B teams with recurring revenue and a pile of lost accounts nobody has opened since the last cancellation email; usually revenue, customer success or growth leaders.</p></details>
+      <details class="qa"><summary>What do I need to start?</summary><p>A list of the accounts you've lost, in whatever state it's in (half-empty notes included). Upload it and the model does the rest.</p></details>
+      <details class="qa"><summary>What do I get back?</summary><p>A ranked list of who's worth calling, and a file for each account: why they left, what has changed since, who to speak to and what to say when you do.</p></details>
+      <details class="qa"><summary>Isn't this just a win-back email campaign?</summary><p>A campaign sends one message to the whole list; Intellible works out, account by account, who is worth a conversation at all. It checks who they are today, why they really left and whether that reason has since expired, then tests the pitch on the people who'll decide. A campaign is a flyer through every door (most end up in the bin); this tells you which door to knock on and what they'll say.</p></details>
+      <details class="qa"><summary>Does it contact my customers for me?</summary><p>No; it tells you who to call and how to open, and the conversation stays yours.</p></details>
+      <details class="qa"><summary>Can I try it?</summary><p>We're running pilots right now. Book a strategy call and we'll run it on your own lost accounts.</p></details>
+    </div>
+  </section>
+
   <!-- CLOSE -->
   <section class="close" id="close" data-field="close">
     <h2 class="manifesto">
@@ -173,12 +229,11 @@
       <span class="mask"><span>someone just</span></span>
       <span class="mask"><span>has to ask.</span></span>
     </h2>
+    <p class="pilot reveal">Pilots open; we run it on your own lost accounts.</p>
     <div class="cta-row reveal">
       <a class="cta-main" href="https://calendly.com/vikrant-intellible/30min" target="_blank" rel="noopener">Book a strategy call <span aria-hidden="true">↗</span></a>
       <button class="text-btn" id="talk-open"><span aria-hidden="true">→</span> Get in touch</button>
-      <button class="text-btn" id="film-open-2"><span aria-hidden="true">▶</span> Watch the demo</button>
     </div>
-    <a class="founder" href="https://www.linkedin.com/in/vikrantsharma10/" target="_blank" rel="noopener"><span class="eyebrow">Founder</span> Vikrant Sharma on LinkedIn <span aria-hidden="true">↗</span></a>
     <div class="mosaic close-mosaic" aria-hidden="true">
       <div class="tile k1" data-speed="0.12" style="background-image:url(img_dunes_c.webp)"></div>
       <div class="tile k2" data-speed="-0.1" style="background-image:url(img_dunes_a.webp)"></div>
@@ -191,18 +246,9 @@
 
 <footer class="foot">
   <span class="mark">INTELLIBLE</span>
-  <span class="muted">Win back lost revenue.</span>
+  <span class="foot-links"><span class="foot-mail">vikrant@intellible.io</span><a href="https://www.linkedin.com/in/vikrantsharma10/" target="_blank" rel="noopener">LinkedIn</a></span>
   <span class="muted">© 2026</span>
 </footer>
-
-<div class="film-overlay" id="film-overlay" aria-hidden="true">
-  <div class="film-backdrop" data-close></div>
-  <div class="film-stage glass" id="film-stage" role="dialog" aria-modal="true" aria-label="Intellible demo">
-    <video id="film" src="intellible-film.mp4" poster="poster.jpg" playsinline controls preload="metadata"></video>
-    <button class="film-close glass" data-close aria-label="Close the demo">✕</button>
-  </div>
-  <span class="film-hint">Press Esc to keep scrolling</span>
-</div>
 
 <div class="talk-overlay" id="talk-overlay" aria-hidden="true">
   <div class="film-backdrop" data-talk-close></div>
