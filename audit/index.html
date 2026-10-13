@@ -1,0 +1,55 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The lost accounts audit</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--void:#010001;--jet:#161210;--m80:#312c21;--m60:#5e594a;--m40:#959180;--mint:#cdc9b5;--sand:#eeeadc;--sol:#ff9d00;--ember:#e34608}
+*{box-sizing:border-box;margin:0}body{background:var(--void);color:var(--sand);font:400 17px/1.6 'Inter Tight',sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 40px}
+.glow-top{background:radial-gradient(ellipse 60% 70% at 50% -10%,rgba(255,157,0,.42),rgba(227,70,8,.24) 35%,rgba(227,70,8,.05) 65%,transparent 85%)}
+.glow-bot{background:radial-gradient(ellipse 60% 70% at 50% 115%,rgba(255,157,0,.4),rgba(227,70,8,.22) 35%,rgba(227,70,8,.05) 65%,transparent 85%)}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--m40);display:inline-flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sol);box-shadow:0 0 10px var(--ember)}
+.disp{font-family:Archivo,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:-.02em;line-height:.92}
+.hero{padding:180px 0 140px;text-align:center}
+.hero h1{font-size:clamp(56px,9vw,128px);margin:36px 0 32px}
+.hero .sub{font-size:22px;color:var(--mint)}
+.intro{max-width:620px;margin:56px auto 0;color:var(--m40)}
+hr{border:0;height:1px;background:rgba(238,234,220,.1)}
+.dots{position:relative}
+.dots:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(238,234,220,.16) 1px,transparent 1.5px);background-size:22px 22px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,#000 10%,transparent 75%);pointer-events:none}
+.q{display:grid;grid-template-columns:160px 1fr;gap:40px;padding:72px 0;border-top:1px solid rgba(238,234,220,.1);position:relative}
+.q:last-child{border-bottom:1px solid rgba(238,234,220,.1)}
+.num{font-size:13px;letter-spacing:.16em;color:var(--m60);padding-top:10px}.num b{color:var(--sol);font-weight:500}
+.q h2{font-size:clamp(34px,4.6vw,60px)}
+.q p{margin-top:24px;max-width:560px;color:var(--m40)}
+.score{padding:160px 0;text-align:center}
+.score h2{font-size:clamp(40px,6vw,84px);margin:32px 0 28px}
+.score p{max-width:560px;margin:0 auto;color:var(--m40);font-size:19px}
+.pitch{padding:150px 0 200px;text-align:center}
+.pitch p{max-width:640px;margin:36px auto 52px;color:var(--mint);font-size:20px}
+.cta{display:inline-flex;align-items:center;gap:14px;padding:18px 30px;border-radius:999px;background:linear-gradient(135deg,var(--sol),var(--ember));color:var(--void);font-weight:500;text-decoration:none;font-size:16px;box-shadow:0 10px 40px rgba(227,70,8,.35)}
+footer{padding:40px 0 56px;text-align:center;font-size:12px;letter-spacing:.42em;color:var(--m60)}
+@media(max-width:700px){.q{grid-template-columns:1fr;gap:16px}.hero{padding:120px 0 90px}}
+</style></head><body>
+<section class="glow-top"><div class="wrap hero">
+<span class="eyebrow">A ten-minute exercise</span>
+<h1 class="disp">The lost<br>accounts audit</h1>
+<p class="sub">Ten minutes, five questions, one churned list.</p>
+<p class="intro">Pull every churned and closed-lost account from the last 24 months in your CRM, pick five, and run each through the questions below.</p>
+</div></section>
+<section class="dots"><div class="wrap">
+<div class="q"><div class="num"><b>01</b> / 05</div><div><h2 class="disp">Why did they really leave?</h2><p>Not the dropdown reason; if it says price, check their last login.</p></div></div>
+<div class="q"><div class="num"><b>02</b> / 05</div><div><h2 class="disp">Has that reason expired?</h2><p>The champion left, the missing feature shipped, the budget reset.</p></div></div>
+<div class="q"><div class="num"><b>03</b> / 05</div><div><h2 class="disp">What has happened to them since?</h2><p>New funding, new leadership, hiring or expansion.</p></div></div>
+<div class="q"><div class="num"><b>04</b> / 05</div><div><h2 class="disp">Who would you call, and would they take it?</h2></div></div>
+<div class="q"><div class="num"><b>05</b> / 05</div><div><h2 class="disp">Whose job is this?</h2></div></div>
+</div></section>
+<section><div class="wrap score"><span class="eyebrow">How did you do</span>
+<h2 class="disp">Stuck on three<br>or more?</h2>
+<p>If you got stuck on three or more, the list is worth a proper look.</p></div></section>
+<section class="glow-bot"><div class="wrap pitch"><hr style="max-width:120px;margin:0 auto 64px">
+<span class="eyebrow">Intellible</span>
+<p>Intellible works through your lost accounts for you: it finds out who has changed, why they left, who to call, and rehearses the first conversation with their buying committee before you pick up the phone. It's in pilot with a small number of B2B teams.</p>
+<a class="cta" href="https://calendly.com/vikrant-intellible/30min">Book a 30-minute call <span>&rarr;</span></a>
+</div><footer>INTELLIBLE</footer></section>
+</body></html>
