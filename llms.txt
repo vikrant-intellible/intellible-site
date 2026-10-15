@@ -1,0 +1,22 @@
+# Intellible
+
+> Intellible is a win-back intelligence service for B2B teams. We find which lost accounts are worth winning back, why they left, what's changed and how to open the call. Your team makes the call. We never contact your customers.
+
+## Who it is for
+Heads, VPs and directors of sales, revenue, customer success, marketing and growth at B2B companies whose own customers are businesses, from SMB to mid-market. Focus: B2B SaaS, fintech, edtech payments, foodtech and cloud kitchen operators. UAE first, then the GCC.
+
+## How it works
+You share your lost accounts. We read each account's public signals (leadership changes, funding, launches, hiring), work out the likely reason it left and what has changed since, and rank which ones are worth winning back. For each account you get the reason it left, what changed, why now, who to contact and how to open the call.
+
+## How it starts
+With a paid audit of your lost accounts, before committing to the ongoing monthly service. Book a call to talk scope and pricing: https://calendly.com/vikrant-intellible/30min
+
+## Company
+- Based in Dubai, UAE. Founded in August 2026.
+- Founder: Vikrant Sharma (https://www.linkedin.com/in/vikrantsharma10/). 9 years in operations across MENA and India at Uber, Careem, Zomato, CloudKitchens and Atoms; built an XGBoost churn model himself; Lean Six Sigma Green Belt.
+- LinkedIn: https://www.linkedin.com/company/intellible/
+- Email: vikrant@intellible.io
+
+## Pages
+- [Home](https://www.intellible.io/): what Intellible does, how it works and FAQs
+- [The lost accounts audit](https://www.intellible.io/audit): a ten-minute, five-question exercise for your churned list
