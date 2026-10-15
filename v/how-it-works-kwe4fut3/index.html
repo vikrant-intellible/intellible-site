@@ -15,11 +15,22 @@ html,body{height:100%;background:#010001;color:#eeeadc}
 body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,4vh,40px);padding:clamp(16px,4vw,48px);min-height:100svh}
 .mark{font:400 18px Archivo,"Arial Narrow",sans-serif;letter-spacing:.24em;color:#eeeadc;text-decoration:none}
 video{display:block;width:100%;max-width:1200px;max-height:80vh;aspect-ratio:16/9;background:#000;border-radius:12px}
+.speeds{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.speeds button{min-width:64px;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid #5e594a;background:transparent;color:#eeeadc;font:500 15px Archivo,"Arial Narrow",sans-serif;letter-spacing:.08em;cursor:pointer;transition:color .25s,border-color .25s}
+.speeds button:hover{border-color:#ff9d00}
+.speeds button[aria-pressed="true"]{color:#ff9d00;border-color:#ff9d00}
+.speeds button:focus-visible{outline:2px solid #eeeadc;outline-offset:3px}
 @media(max-width:640px){.mark{font-size:15px;letter-spacing:.2em}}
 </style>
 </head>
 <body>
 <span class="mark">INTELLIBLE</span>
 <video controls playsinline preload="metadata" poster="poster.jpg"><source src="intellible-how-it-works.mp4" type="video/mp4"></video>
+<div class="speeds" role="group" aria-label="Playback speed">
+<button type="button" data-rate="1" aria-pressed="true">1x</button>
+<button type="button" data-rate="1.25" aria-pressed="false">1.25x</button>
+<button type="button" data-rate="1.5" aria-pressed="false">1.5x</button>
+</div>
+<script>(function(){var v=document.querySelector("video"),bs=document.querySelectorAll(".speeds button"),r=1;function set(n){r=n;v.defaultPlaybackRate=n;v.playbackRate=n;bs.forEach(function(b){b.setAttribute("aria-pressed",String(+b.dataset.rate===n))})}bs.forEach(function(b){b.addEventListener("click",function(){set(+b.dataset.rate)})});["play","loadedmetadata","seeked","ended"].forEach(function(e){v.addEventListener(e,function(){if(v.playbackRate!==r){v.defaultPlaybackRate=r;v.playbackRate=r}})})})();</script>
 </body>
 </html>
