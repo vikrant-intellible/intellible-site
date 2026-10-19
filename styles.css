@@ -350,3 +350,9 @@ a.text-btn{display:inline-block}
 .qa p a{color:var(--sand);border-bottom:1px solid var(--sol);transition:color .25s}
 .qa p a:hover{color:var(--sol)}
 .q-faq-all{margin-top:clamp(40px,6vw,72px)}
+.qa p + ul{margin-top:-14px}
+.qa ul{margin:0 0 26px;padding-left:1.2em;max-width:58ch}
+.qa li{margin:0 0 10px;font-size:clamp(16px,1.2vw,19px);line-height:1.55;color:var(--mint)}
+.qa li:last-child{margin-bottom:0}
+.qa li::marker{color:var(--sol)}
+.qa li strong{color:var(--sand);font-weight:500}
