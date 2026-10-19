@@ -3,7 +3,7 @@
 > Intellible is a win-back intelligence service for B2B teams. We find which lost accounts are worth winning back, why they left, what's changed and how to open the call. Your team makes the call. We never contact your customers.
 
 ## Who it is for
-Heads, VPs and directors of sales, revenue, customer success, marketing and growth at B2B companies whose own customers are businesses, from SMB to mid-market. Focus: B2B SaaS, fintech, edtech payments, foodtech and cloud kitchen operators. UAE first, then the GCC.
+Heads, VPs and directors of sales, revenue, customer success, marketing and growth at B2B companies whose own customers are businesses, from SMB to mid-market. Focus: B2B SaaS, fintech, edtech payments, foodtech and cloud kitchen operators across the UAE, the GCC, Europe, Singapore and the United States.
 
 ## How it works
 You share your lost accounts. We read each account's public signals (leadership changes, funding, launches, hiring), work out the likely reason it left and what has changed since, and rank which ones are worth winning back. For each account you get the reason it left, what changed, why now, who to contact and how to open the call.
@@ -20,6 +20,7 @@ Start with an audit to see what your lost accounts are worth. Then keep us runni
 ## Pages
 - [Home](https://www.intellible.io/): what Intellible does, how it works and FAQs
 - [The lost accounts audit](https://www.intellible.io/audit): a ten-minute, five-question exercise for your churned list
+- [What is win-back intelligence?](https://www.intellible.io/win-back-intelligence): the definition, how it differs from nearby approaches, the six steps, sample output and FAQs
 
 ## Questions we get asked
 - [What is the difference between churn prevention and win-back?](https://www.intellible.io/win-back-vs-churn-prevention): prevention works while the customer is still with you; win-back starts after they have gone
