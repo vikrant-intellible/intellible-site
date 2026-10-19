@@ -349,3 +349,4 @@ a.text-btn{display:inline-block}
 }
 .qa p a{color:var(--sand);border-bottom:1px solid var(--sol);transition:color .25s}
 .qa p a:hover{color:var(--sol)}
+.q-faq-all{margin-top:clamp(40px,6vw,72px)}

@@ -47,6 +47,7 @@ body{background:var(--void);color:var(--sand);font:400 clamp(16px,.35vw + 15px,1
 .cta span{transition:transform .3s}.cta:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(227,70,8,.5)}.cta:hover span{transform:translateX(4px)}
 .cta:focus-visible{outline:2px solid var(--sand);outline-offset:4px}
 footer{padding:40px 0 56px;text-align:center;font-size:12px;letter-spacing:.42em;color:var(--m60)}
+.foot-faq{margin-left:2.4em;color:inherit;text-decoration:none;border-bottom:1px solid var(--m60);padding-bottom:2px}.foot-faq:hover{color:var(--sand)}
 @media(max-width:640px){.q{grid-template-columns:1fr;gap:14px}.hero h1 br,.score h2 br{display:none}.cta{width:100%;max-width:360px}}
 .js .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1)}
 .js .reveal.in{opacity:1;transform:none}
@@ -72,5 +73,5 @@ footer{padding:40px 0 56px;text-align:center;font-size:12px;letter-spacing:.42em
 <span class="eyebrow reveal">Intellible</span>
 <p class="reveal">Intellible is a <a href="/win-back-intelligence">win-back intelligence</a> service for B2B teams. We find which lost accounts are worth winning back, why they left, what has changed and who to call, then rehearse the first conversation with the people who will decide before your team picks up the phone.</p>
 <a class="cta reveal" href="https://calendly.com/vikrant-intellible/30min">Book a 30-minute call <span aria-hidden="true">&rarr;</span></a>
-</div><footer><a href="/" aria-label="Intellible home" style="color:inherit;text-decoration:none">INTELLIBLE</a></footer></section></main>
+</div><footer><a href="/" aria-label="Intellible home" style="color:inherit;text-decoration:none">INTELLIBLE</a><a class="foot-faq" href="/faq">FAQ</a></footer></section></main>
 <script>(function(){var els=document.querySelectorAll(".reveal");if(!("IntersectionObserver"in window)||matchMedia("(prefers-reduced-motion: reduce)").matches){els.forEach(function(e){e.classList.add("in")});return}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.08});els.forEach(function(e){io.observe(e)})})();</script></body></html>

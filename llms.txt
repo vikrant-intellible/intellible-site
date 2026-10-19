@@ -21,6 +21,7 @@ Start with an audit to see what your lost accounts are worth. Then keep us runni
 - [Home](https://www.intellible.io/): what Intellible does, how it works and FAQs
 - [The lost accounts audit](https://www.intellible.io/audit): a ten-minute, five-question exercise for your churned list
 - [What is win-back intelligence?](https://www.intellible.io/win-back-intelligence): the definition, how it differs from nearby approaches, the six steps, sample output and FAQs
+- [Questions about Intellible](https://www.intellible.io/faq): every question we get asked about Intellible, with answers
 
 ## Questions we get asked
 - [What is the difference between churn prevention and win-back?](https://www.intellible.io/win-back-vs-churn-prevention): prevention works while the customer is still with you; win-back starts after they have gone
