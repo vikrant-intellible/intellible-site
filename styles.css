@@ -347,3 +347,5 @@ a.text-btn{display:inline-block}
   .q-table.sample td:first-child::before{display:none}
   .q-table.cmp th{font-size:16px}
 }
+.qa p a{color:var(--sand);border-bottom:1px solid var(--sol);transition:color .25s}
+.qa p a:hover{color:var(--sol)}
