@@ -356,3 +356,13 @@ a.text-btn{display:inline-block}
 .qa li:last-child{margin-bottom:0}
 .qa li::marker{color:var(--sol)}
 .qa li strong{color:var(--sand);font-weight:500}
+
+/* glossary and dated byline */
+.gloss{margin:0}
+.gloss-item{padding:28px 0;border-top:1px solid var(--glass-line);scroll-margin-top:120px}
+.gloss-item:first-child{border-top:0;padding-top:0}
+.gloss dt{margin:0 0 10px;font:500 clamp(19px,1.6vw,24px)/1.1 var(--display);letter-spacing:.01em;text-transform:uppercase;color:var(--sol)}
+.gloss dd{margin:0}
+.gloss dd p:last-child{margin-bottom:0}
+.gloss .qa-more{margin:4px 0 0!important}
+.q-byline{margin:-6px 0 0;font-size:14px;line-height:1.5;color:var(--moss-40)}
