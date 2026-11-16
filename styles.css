@@ -366,3 +366,4 @@ a.text-btn{display:inline-block}
 .gloss dd p:last-child{margin-bottom:0}
 .gloss .qa-more{margin:4px 0 0!important}
 .q-byline{margin:-6px 0 0;font-size:14px;line-height:1.5;color:var(--moss-40)}
+.q-byline a,.foot .muted a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:rgba(238,234,220,.35);text-underline-offset:.2em}
