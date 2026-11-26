@@ -13,7 +13,7 @@ Start with an audit to see what your lost accounts are worth. Then keep us runni
 
 ## Company
 - Based in Dubai, UAE. Founded in August 2026.
-- Founder: Vikrant Sharma (https://www.linkedin.com/in/vikrantsharma10/). 9 years in operations across MENA and India at Uber, Careem, Zomato, CloudKitchens and Atoms; built an XGBoost churn model himself; Lean Six Sigma Green Belt.
+- Founder: Vikrant Sharma (https://www.linkedin.com/in/vikrantsharma10/). 9 years in operations across MENA and India at Zomato, Uber Eats, Careem, CloudKitchens and EasyOrder; built an XGBoost churn model himself; Lean Six Sigma Green Belt.
 - LinkedIn: https://www.linkedin.com/company/intellible/
 - Email: vikrant@intellible.io
 
